@@ -1,0 +1,23 @@
+application:
+  actions: actions
+  runtimeManifest:
+    packages:
+      core-runtime:
+        license: Apache-2.0
+        actions:
+          health:
+            function: actions/core-runtime/health/index.js
+            web: 'yes'
+            runtime: nodejs:20
+            inputs:
+              LOG_LEVEL: info
+      order-commerce:
+        license: Apache-2.0
+        actions:
+          save-commit-after:
+            function: order/commerce/save-commit-after/index.js
+            web: 'yes'
+            runtime: nodejs:20
+            inputs:
+              LOG_LEVEL: info
+              IIO_EVENTS_WEBHOOK_URL: $IIO_EVENTS_WEBHOOK_URL
