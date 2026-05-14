@@ -1,0 +1,7 @@
+packages:
+  core-runtime:
+    actions:
+      health:
+        function: health/index.js
+        web: 'yes'
+        runtime: nodejs:20
