@@ -1,0 +1,17 @@
+{
+  "name": "commerce-integration-core-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lean App Builder core runtime scaffold",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@adobe/aio-lib-state": "^5.3.1",
+    "aio-lib-state": "npm:@adobe/aio-lib-state@^5.3.1"
+  },
+  "scripts": {
+    "build": "echo \"Core runtime scaffold ready\"",
+    "test": "echo \"No tests configured\""
+  }
+}

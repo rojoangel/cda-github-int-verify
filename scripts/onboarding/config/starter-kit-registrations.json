@@ -1,0 +1,9 @@
+{
+  "registrations": [
+    {
+      "event": "com.adobe.commerce.observer.sales_order_save_commit_after",
+      "action": "order/commerce/save-commit-after",
+      "description": "Listen for order save commit after events and persist audit logs."
+    }
+  ]
+}
