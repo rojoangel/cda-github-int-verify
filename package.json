@@ -1,0 +1,1 @@
+{"name":"commerce-app","version":"1.0.0","private":true,"dependencies":{"@adobe/aio-commerce-lib-app":"^1.5.0","@adobe/aio-commerce-sdk":"^1.2.0"},"description":"Commerce App Builder application","scripts":{"postinstall":"npx aio-commerce-lib-app hooks postinstall"}}
