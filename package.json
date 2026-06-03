@@ -1,0 +1,16 @@
+{
+  "name": "product-reviews-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@adobe/aio-commerce-lib-app": "^1.5.0",
+    "@adobe/aio-commerce-lib-config": "^1.5.0",
+    "@adobe/aio-commerce-sdk": "^1.2.1",
+    "node-fetch": "^2.7.0"
+  },
+  "description": "Public App Builder proxy for product reviews and ratings endpoints backed by an external reviews API.",
+  "scripts": {
+    "postinstall": "npx aio-commerce-lib-app hooks postinstall"
+  }
+}

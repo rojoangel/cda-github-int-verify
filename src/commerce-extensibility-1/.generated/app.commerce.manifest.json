@@ -1,0 +1,24 @@
+{
+  "businessConfig": {
+    "schema": [
+      {
+        "default": "",
+        "label": "Reviews API Base URL",
+        "name": "reviews-api-base-url",
+        "type": "url"
+      },
+      {
+        "default": "",
+        "label": "Reviews API Bearer Token",
+        "name": "reviews-api-bearer-token",
+        "type": "password"
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Public App Builder proxy for product reviews and ratings endpoints backed by an external reviews API.",
+    "displayName": "Product Reviews Proxy",
+    "id": "product-reviews-proxy",
+    "version": "1.0.0"
+  }
+}

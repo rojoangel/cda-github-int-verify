@@ -1,0 +1,14 @@
+[
+  {
+    "default": "",
+    "label": "Reviews API Base URL",
+    "name": "reviews-api-base-url",
+    "type": "url"
+  },
+  {
+    "default": "",
+    "label": "Reviews API Bearer Token",
+    "name": "reviews-api-bearer-token",
+    "type": "password"
+  }
+]
