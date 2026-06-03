@@ -34,6 +34,10 @@ function normalizePath(path) {
   return pathname.replace(/\/+$/, "") || "/";
 }
 
+function isAllowedPath(path) {
+  return [...ALLOWED_PATHS].some((allowedPath) => path === allowedPath || path.startsWith(`${allowedPath}/`));
+}
+
 async function ensureConfigInitialized() {
   if (!configInitialized) {
     await initialize({ schema });
@@ -91,7 +95,7 @@ export async function main(params = {}) {
   const queryString = params.__ow_query || params.queryString || "";
   const body = params.__ow_body || params.body || "";
 
-  if (!ALLOWED_PATHS.has(path)) {
+  if (!isAllowedPath(path)) {
     return response(400, { error: "Unsupported path" });
   }
 
