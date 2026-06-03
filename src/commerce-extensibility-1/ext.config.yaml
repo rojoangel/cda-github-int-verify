@@ -23,3 +23,17 @@ runtimeManifest:
           annotations:
             require-adobe-auth: true
             final: true
+
+    reviews-proxy:
+      license: Apache-2.0
+      actions:
+        reviews-proxy:
+          function: actions/reviews-proxy/index.js
+          web: yes
+          runtime: nodejs:22
+          inputs:
+            LOG_LEVEL: $LOG_LEVEL
+            AIO_COMMERCE_CONFIG_ENCRYPTION_KEY: $AIO_COMMERCE_CONFIG_ENCRYPTION_KEY
+          annotations:
+            require-adobe-auth: true
+            final: true
