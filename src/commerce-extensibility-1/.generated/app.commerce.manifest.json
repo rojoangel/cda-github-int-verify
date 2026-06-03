@@ -1,0 +1,26 @@
+{
+  "businessConfig": {
+    "schema": [
+      {
+        "default": "",
+        "description": "Base URL for the external reviews and ratings API.",
+        "label": "Reviews API Base URL",
+        "name": "REVIEWS_API_BASE_URL",
+        "type": "url"
+      },
+      {
+        "default": "",
+        "description": "Bearer token used to authenticate requests to the external reviews and ratings API.",
+        "label": "Reviews API Bearer Token",
+        "name": "REVIEWS_API_BEARER_TOKEN",
+        "type": "password"
+      }
+    ]
+  },
+  "metadata": {
+    "description": "Proxy storefront reviews and ratings requests to the external reviews API.",
+    "displayName": "Reviews Ratings Proxy",
+    "id": "reviews-ratings-proxy",
+    "version": "1.0.0"
+  }
+}

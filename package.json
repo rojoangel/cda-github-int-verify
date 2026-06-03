@@ -1,0 +1,14 @@
+{
+  "name": "reviews-ratings-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@adobe/aio-commerce-lib-app": "^1.5.0",
+    "@adobe/aio-commerce-lib-config": "^1.5.0",
+    "@adobe/aio-commerce-sdk": "^1.2.1"
+  },
+  "description": "Proxy storefront reviews and ratings requests to the external reviews API.",
+  "scripts": {
+    "postinstall": "npx aio-commerce-lib-app hooks postinstall"
+  }
+}

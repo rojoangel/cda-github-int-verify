@@ -1,0 +1,16 @@
+[
+  {
+    "default": "",
+    "description": "Base URL for the external reviews and ratings API.",
+    "label": "Reviews API Base URL",
+    "name": "REVIEWS_API_BASE_URL",
+    "type": "url"
+  },
+  {
+    "default": "",
+    "description": "Bearer token used to authenticate requests to the external reviews and ratings API.",
+    "label": "Reviews API Bearer Token",
+    "name": "REVIEWS_API_BEARER_TOKEN",
+    "type": "password"
+  }
+]
